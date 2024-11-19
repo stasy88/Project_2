@@ -1,0 +1,26 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Chekout Code
+      uses: actions/checkout@v4
+    
+    - name: Install Dependencies
+      run: sudo apt-get install g++
+
+    - name: Compile Test
+      run: g++ -std=c++11 -pthread tests/tests.cpp -o tests
+
+    - name: Run tests
+      run: ./tests
+      
