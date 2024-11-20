@@ -1,4 +1,3 @@
-metsuki sutemi, [20.11.2024 12:34]
 #include <iostream>
 #include <cmath>
 #include <omp.h>
@@ -144,7 +143,6 @@ void test_performance() {
     cout << "Последовательное время: " << sequential_time << " секунд." << endl;
     cout << "Параллельное время: " << parallel_time << " секунд." << endl;
 
-metsuki sutemi, [20.11.2024 12:34]
 cout << "Тест 1 пройден: параллельная версия работает быстрее." << endl;
 }
 // Тест 2:  Оценка производительности 6 потоков
