@@ -19,7 +19,7 @@ jobs:
       run: sudo apt-get install g++
 
     - name: Compile Test
-      run: g++ -std=c++11 -pthread ТестыПроекта/МитричевПроект.cpp -o tests
+      run: g++ -std=c++11 -pthread ТестыПроекта/МитричевПроект/МитричевПроект.cpp -o tests
 
     - name: Run tests
       run: ./tests
