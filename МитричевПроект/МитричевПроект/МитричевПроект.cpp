@@ -146,7 +146,7 @@ void test_performance() {
 cout << "Тест 1 пройден: параллельная версия работает быстрее." << endl;
 }
 // Тест 2:  Оценка производительности 16 потоков
-void test_performance_6() {
+void test_performance_16() {
     double start_time, end_time;
 
     start_time = omp_get_wtime();
