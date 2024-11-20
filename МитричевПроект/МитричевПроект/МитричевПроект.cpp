@@ -117,7 +117,7 @@ void test_performance_new() {
     double sequential_time = end_time - start_time;
 
     start_time = omp_get_wtime();
-    solve_2(true, 6);
+    solve_2(true, 16);
     end_time = omp_get_wtime();
     double parallel_time = end_time - start_time;
 
@@ -145,7 +145,7 @@ void test_performance() {
 
 cout << "Тест 1 пройден: параллельная версия работает быстрее." << endl;
 }
-// Тест 2:  Оценка производительности 6 потоков
+// Тест 2:  Оценка производительности 16 потоков
 void test_performance_6() {
     double start_time, end_time;
 
@@ -173,7 +173,7 @@ int main() {
 
 
     test_performance();
-    test_performance_6();
+    test_performance_16();
     test_performance_new();
 
 
